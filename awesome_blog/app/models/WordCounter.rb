@@ -1,4 +1,4 @@
-module WordCounter
+module Wordcounter
 
     def word_count(thing)
         if (thing.body.length ==0)
@@ -8,5 +8,6 @@ module WordCounter
             return thing.body.split.size
         end
     
+    end
 
 end

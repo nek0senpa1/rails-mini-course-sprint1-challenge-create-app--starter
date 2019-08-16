@@ -1,6 +1,6 @@
 class AppStats
 
-    attr_reader :posts :quotes
+    attr_reader :posts, :quotes
 
     # def posts (n)
     #     @posts
@@ -10,8 +10,8 @@ class AppStats
     # end
 
     def initialize (posts, quotes)
-        @posts = posts
-        @quotes = quotes
+        @posts = Post.all
+        @quotes = Quote.all
 
     end
 
