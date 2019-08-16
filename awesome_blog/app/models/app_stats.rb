@@ -10,8 +10,8 @@ class AppStats
     # end
 
     def initialize (posts, quotes)
-        @posts = Post.all
-        @quotes = Quote.all
+        @posts = posts
+        @quotes = quotes
 
     end
 
