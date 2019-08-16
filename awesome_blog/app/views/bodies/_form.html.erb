@@ -1,0 +1,22 @@
+<%= form_with(model: body, local: true) do |form| %>
+  <% if body.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(body.errors.count, "error") %> prohibited this body from being saved:</h2>
+
+      <ul>
+      <% body.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :published_at %>
+    <%= form.datetime_select :published_at %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
