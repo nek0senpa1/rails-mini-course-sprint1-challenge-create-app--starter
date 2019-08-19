@@ -13,7 +13,7 @@ module Publishable
   end
 
   def published?
-    published_at.nil?
+    !published_at.nil?
   end
 
 end

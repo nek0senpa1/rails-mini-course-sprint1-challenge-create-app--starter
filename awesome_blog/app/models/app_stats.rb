@@ -20,7 +20,7 @@ class AppStats
     #as an array... 
 
     def posts_count
-        return @posts.length
+        return posts.count
     end
 
     def quotes_count
